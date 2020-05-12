@@ -1,0 +1,355 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'FuturaNew';
+    src: url('../fonts/FuturaNewHeavy-Reg.eot');
+    src: url('../fonts/FuturaNewHeavy-Reg.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/FuturaNewHeavy-Reg.svg#FuturaNewHeavy-Reg') format('svg'),
+         url('../fonts/FuturaNewHeavy-Reg.ttf') format('truetype'),
+         url('../fonts/FuturaNewHeavy-Reg.woff') format('woff'),
+         url('../fonts/FuturaNewHeavy-Reg.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FuturaNew';
+    src: url('../fonts/FuturaNewBold-Reg.eot');
+    src: url('../fonts/FuturaNewBold-Reg.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/FuturaNewBold-Reg.svg#FuturaNewBold-Reg') format('svg'),
+         url('../fonts/FuturaNewBold-Reg.ttf') format('truetype'),
+         url('../fonts/FuturaNewBold-Reg.woff') format('woff'),
+         url('../fonts/FuturaNewBold-Reg.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FuturaNew';
+    src: url('../fonts/FuturaNewMedium-Reg.eot');
+    src: url('../fonts/FuturaNewMedium-Reg.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/FuturaNewMedium-Reg.svg#FuturaNewMedium-Reg') format('svg'),
+         url('../fonts/FuturaNewMedium-Reg.ttf') format('truetype'),
+         url('../fonts/FuturaNewMedium-Reg.woff') format('woff'),
+         url('../fonts/FuturaNewMedium-Reg.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FuturaNew';
+    src: url('../fonts/FuturaNewBook-Reg.eot');
+    src: url('../fonts/FuturaNewBook-Reg.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/FuturaNewBook-Reg.svg#FuturaNewBook-Reg') format('svg'),
+         url('../fonts/FuturaNewBook-Reg.ttf') format('truetype'),
+         url('../fonts/FuturaNewBook-Reg.woff') format('woff'),
+         url('../fonts/FuturaNewBook-Reg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FuturaNew';
+    src: url('../fonts/FuturaNewLight-Reg.eot');
+    src: url('../fonts/FuturaNewLight-Reg.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/FuturaNewLight-Reg.svg#FuturaNewLight-Reg') format('svg'),
+         url('../fonts/FuturaNewLight-Reg.ttf') format('truetype'),
+         url('../fonts/FuturaNewLight-Reg.woff') format('woff'),
+         url('../fonts/FuturaNewLight-Reg.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FuturaNew';
+    src: url('../fonts/FuturaNewDemi-Reg.eot');
+    src: url('../fonts/FuturaNewDemi-Reg.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/FuturaNewDemi-Reg.svg#FuturaNewDemi-Reg') format('svg'),
+         url('../fonts/FuturaNewDemi-Reg.ttf') format('truetype'),
+         url('../fonts/FuturaNewDemi-Reg.woff') format('woff'),
+         url('../fonts/FuturaNewDemi-Reg.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+html,
+body {
+	position: relative;
+}
+body {
+	min-width: 300px;
+	text-align: center;
+	overflow-x: hidden;
+	-webkit-text-size-adjust: none;
+	color: #31434e;
+    font-family: 'FuturaNew', sans-serif;
+}
+body.no-scroll {
+	height: 100vh !important;
+	overflow: hidden !important;
+}
+body .body-wrap {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+a{
+	text-decoration: none;
+	color: #31434e;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+button {
+    font-family: 'FuturaNew', sans-serif;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+button:hover {
+    cursor: pointer;
+}
+li{
+	list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+label.error{
+	display: none !important;
+}
+input.error,textarea.error{
+	border-color: #ff0000 !important;
+}
+.fancybox-inner{
+	overflow: visible !important;
+}
+.b{
+	position: relative;
+}
+.container{
+	position: relative;
+	max-width: 1230px;
+	padding: 0 30px;
+	box-sizing: border-box;
+	margin: 0px auto;
+}
+.b-absolute{
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -500px;
+}
+input::-webkit-input-placeholder, input:-moz-placeholder {
+	color: #000000;
+}
+.mobile-btn {
+    display: none;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    cursor: pointer;
+}
+.mobile-btn .mobile-btn-el{
+    position: absolute;
+    border-radius: 100px;
+    top: calc(50% - 1.5px);
+    left: 14px;
+    width: 22px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.3);
+    opacity: 1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.mobile-btn::before {
+    content: '';
+    position: absolute;
+    border-radius: 100px;
+    left: 14px;
+    top: calc(50% - 1.5px);
+    width: 22px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.3);
+    -webkit-transform: translateY(-7px);
+    -moz-transform: translateY(-7px);
+    -ms-transform: translateY(-7px);
+    transform: translateY(-7px);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.mobile-btn::after {
+    content: '';
+    position: absolute;
+    border-radius: 100px;
+    left: 14px;
+    top: calc(50% - 1.5px);
+    width: 22px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.3);
+    -webkit-transform: translateY(7px);
+    -moz-transform: translateY(7px);
+    -ms-transform: translateY(7px);
+    transform: translateY(7px);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.close-btn {
+    display: none;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+    cursor: pointer;
+    opacity: 0.3;
+}
+.close-btn::after {
+    content: '';
+    position: absolute;
+    border-radius: 100px;
+    left: 14px;
+    top: calc(50% - 1.5px);
+    width: 22px;
+    height: 3px;
+    background-color: #ffffff;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.close-btn::before {
+    content: '';
+    position: absolute;
+    border-radius: 100px;
+    left: 14px;
+    top: calc(50% - 1.5px);
+    width: 22px;
+    height: 3px;
+    background-color: #ffffff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.mobile-menu {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    left: -200%;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #31434e;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.mobile-menu.active {
+    left: 0;
+}
+
+.policy-text {
+    display: inline-block;
+    max-width: 100%;
+    font-size: 10px;
+    font-weight: 300;
+    color: #000000;
+    line-height: 1.2;
+    position: relative;
+    text-align: left;
+    padding-left: 35px;
+    margin-top: 18px;
+}
+.policy-text a {
+    color: #000000;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.policy-text a:hover {
+    color: #ffc53c;
+}
+.policy-text .radio-btn {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #f7f7f7;
+    background-color: #f7f7f7;
+    border-radius: 4px;
+    left: 0;
+    top: calc(50% - 10px);
+    box-sizing: border-box;
+}
+.policy-text .radio-btn.error {
+    border-color: #ff0000;
+    background-color: #ff0000;
+}
+.policy-text .radio-btn:hover {
+    cursor: pointer;
+}
+.policy-text .radio-btn.active::before {
+    content: '';
+    display: block;
+    width: 9px;
+    height: 2px;
+    position: absolute;
+    left: 1px;
+    top: 10px;
+    background-color: #aaadb3;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.policy-text .radio-btn.active::after {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 2px;
+    position: absolute;
+    left: 6px;
+    top: 9px;
+    background-color: #aaadb3;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+
+@media (-webkit-min-device-pixel-ratio: 1.5) {
+}	
+@media screen and (max-width: 1280px){
+	
+}
+@media screen and (max-width: 1024px){
+}
+@media screen and (max-width: 768px){
+    .container {
+        padding: 0 10px;
+    }
+    .mobile-btn, .mobile-menu, .close-btn {
+        display: block;
+    }
+}
