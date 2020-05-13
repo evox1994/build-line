@@ -154,6 +154,31 @@ $(document).ready(function(){
 		dots: true
 	});
 
+	$(document).on('click','.b-filter ul li',function(){
+		var el = $(this).attr('data-filter');
+
+		if ( !$(this).hasClass('active') ){
+			$(this).parents('ul').find('li').removeClass('active');
+			$(this).parents('.filter-wrap').find('.filter-item').removeClass('active');
+			$(this).addClass('active');
+			$(el).addClass('active');
+			$(this).parents('.b-filter').find('.text').find('span').text( $(this).text() );
+		}
+		$(this).parents('.b-filter').removeClass('active');
+	});
+
+	$(document).on('click','.b-filter .text',function(){
+		$(this).parents('.b-filter').toggleClass('active');
+	});
+
+	$(document).on('click',function(e){
+		var container = $('.b-filter');
+		
+		if ( container.has(e.target).length === 0 ){
+			container.removeClass('active');
+		}
+	});
+
 	$(document).on('click','.b-qwestions li',function(){
 		var ah = $(this).find('.answer').find('.text').outerHeight();
 
