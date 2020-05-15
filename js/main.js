@@ -154,6 +154,10 @@ $(document).ready(function(){
 		dots: true
 	});
 
+	$('.b-about-slider').slick({
+		dots: true
+	});
+
 	$(document).on('click','.b-filter ul li',function(){
 		var el = $(this).attr('data-filter');
 
