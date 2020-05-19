@@ -25,7 +25,7 @@
 				</div>
 				<div class="callback">
 					<a href="tel:88005559313" class="phone"><img src="i/phone-icon-2.svg"></a>
-					<a href="#" class="callback-a"><img src="i/callback-icon.svg"></a>
+					<a href="#popup-callback" class="callback-a fancybox"><img src="i/callback-icon.svg"></a>
 				</div>
 			</div>
 			<div class="header-top">
@@ -35,7 +35,7 @@
 							<a href="/"><img src="i/logo.svg"></a>
 						</div>
 						<div class="header-callback">
-							<a href="#" class="btn btn-purple">Консультация специалиста</a>
+							<a href="#popup-callback" class="btn btn-purple fancybox">Консультация специалиста</a>
 							<div class="phone">
 								<a href="tel:88005559313">8 800 555 9 313</a>
 								<span>Звоните прямо сейчас!</span>
@@ -63,7 +63,7 @@
 					<div class="close-btn"></div>
 					<div class="callback">
 						<a href="tel:88005559313" class="phone"><img src="i/phone-icon-2.svg"></a>
-						<a href="#" class="callback-a">Консультация</a>
+						<a href="#popup-callback" class="callback-a fancybox">Консультация</a>
 					</div>
 				</div>
 				<ul class="nav">
@@ -380,10 +380,10 @@
 						</a>
 					</div>
 					<ul>
-						<li><img src="i/img-1.jpg"></li>
-						<li><img src="i/img-2.jpg"></li>
-						<li><img src="i/img-3.jpg"></li>
-						<li><img src="i/img-4.jpg"></li>
+						<li><a href="i/img-1.jpg" class="fancybox-gal" data-fancybox="gal"><img src="i/img-1.jpg"></a></li>
+						<li><a href="i/img-2.jpg" class="fancybox-gal" data-fancybox="gal"><img src="i/img-2.jpg"></a></li>
+						<li><a href="i/img-3.jpg" class="fancybox-gal" data-fancybox="gal"><img src="i/img-3.jpg"></a></li>
+						<li><a href="i/img-4.jpg" class="fancybox-gal" data-fancybox="gal"><img src="i/img-4.jpg"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -427,6 +427,36 @@
 		</div>
 
 		<div style="display:none;">
+			<div class="popup" id="popup-callback">
+				<div class="title-wrap">
+					<div class="title">Заголовок формы</div>
+				</div>
+				<div class="content">
+					<div class="b-form">
+						<form>
+							<div class="b-input">
+								<input type="text" placeholder="Ваше имя">
+							</div>
+							<div class="b-input">
+								<input type="tel" placeholder="Ваш телефон">
+							</div>
+							<button type="submit" class="btn">Отправить</button>
+							<div class="policy-text"><div class="radio-btn active"></div>Я принимаю условия <a href="#popup-policy" class="fancybox">политики обработки персональных данных</a></div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="popup popup-policy" id="popup-policy">
+				<div class="content">
+					<div class="title">Соглашение на обработку персональных данных</div>
+					<div class="b-text">
+						<p>Данное соглашение создано нами с целью максимальной защищенности ваших данных. Пожалуйста, прочтите внимательно нашу политику конфиденциальности.<br> Когда вы отправляете заявку на нашем сайте с целью получения услуг, какой-либо справочной информации или обратной связи, вы автоматически даете согласие на обработку нами ваших персональных данных, а также иной информации: хранение, использование и сбор. Мы гарантируем, что ваши личные и персональные данные никогда не будут переданы третьим лицам.</p><br>
+						<p>Все указываемые персональные данные, такие как:<br>• адрес электронной почты,<br>• ваше имя,<br>• контактный номер телефона</p><br>
+						<p>Мы используем исключительно для связи с вами в следующих случаях: ответ на вопросы, обработка ваших заявок.</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
