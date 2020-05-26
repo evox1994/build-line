@@ -125,6 +125,31 @@ $(document).ready(function(){
 		]
 	});
 
+	$('.b-catalog.slider').slick({
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		responsive:[
+			{
+				breakpoint: 1280,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 920,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 560,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
+	});
+
 	$('.b-clients').slick({
 		slidesToShow: 4,
 		slidesToScroll: 1,

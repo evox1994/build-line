@@ -135,6 +135,7 @@ input.error,textarea.error{
 	position: relative;
 }
 .container{
+    width: 100%;
 	position: relative;
 	max-width: 1230px;
 	padding: 0 30px;
