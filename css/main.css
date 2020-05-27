@@ -625,10 +625,16 @@
 	color: #777777;
 }
 .b-catalog li .btn {
-	max-width: 126px;
+	max-width: 110px;
 	position: absolute;
 	left: 20px;
 	bottom: -20px;
+	z-index: 1;
+}
+.b-catalog li .btn.btn-purple {
+	max-width: 70px;
+	left: 140px;
+	z-index: 1;
 }
 .b-catalog.slider .slick-arrow {
 	display: block;
