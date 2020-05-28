@@ -1093,7 +1093,7 @@
 	align-items: flex-start;
 }
 .b-banners .action {
-	width: 100%;
+	width: calc(25% - 15px);
 	max-width: 290px;
 }
 .b-banners .action img {
@@ -1101,7 +1101,7 @@
 	max-width: 100%;
 }
 .b-banners .banner-slider {
-	width: calc(100% - 320px);
+	width: calc(75% - 15px);
 	position: relative;
 	padding-bottom: 30px;
 }
@@ -1667,6 +1667,13 @@
 	height: 50px;
 	opacity: 1;
 	background-color: #b84583;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.popup .fancybox-button.fancybox-close-small:hover {
+	background-color: #9e3b70;
 }
 .popup .fancybox-button.fancybox-close-small svg path {
 	fill: #ffffff !important;
@@ -1838,13 +1845,6 @@
 	}
 	.b-works ul li:nth-child(3n) {
 		margin-right: 0;
-	}
-
-	.b-banners .action {
-		max-width: 200px;
-	}
-	.b-banners .banner-slider {
-		width: calc(100% - 230px);
 	}
 
 	.first-ekr {
@@ -2095,6 +2095,7 @@
 		display: block;
 	}
 	.b-banners .action {
+		width: 100%;
 		max-width: 290px;
 		margin: 0 auto 20px;
 	}
